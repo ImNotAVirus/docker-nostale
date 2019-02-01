@@ -34,7 +34,7 @@
     # It's something like: "~/.wine/drive_c/Program Files (x86)/Nostale" 
     wine [... nostale path ...].NostaleClientX.exe EntwellNostaleClient
 
-## Step 5/4: Restart your container afer stopped it
+## Step 5/4: Restart your container after stopped it
 
     docker start -ai nostale
 
