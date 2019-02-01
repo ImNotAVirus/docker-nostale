@@ -13,16 +13,16 @@
 ## Step 2/4: Run image
 
     # Ye, I known `xhost +` is a bad practice but ¯\_(ツ)_/¯
-    xhost +
+    xhost + $(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
     docker run \
-        -ti \
-        --env DISPLAY=$DISPLAY \
-        --network=host \
+        -it \
+        --env DISPLAY=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}'):0 \
         --name nostale \
         --privileged \
+        --rm \
         --volume /tmp/.X11-unix/:/tmp/.X11-unix/ \
+        --volume $HOME/.wine:/root/.wine \
         nostale
-    xhost -
 
 ## Step 3/4: Install nostale
 
