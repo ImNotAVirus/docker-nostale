@@ -14,6 +14,10 @@
 
     ./start_nostale.sh
 
+## Step 3/4: Install nostale
+
+    wine nostale.exe
+
 ## Step 4/4: Start nostale
 
     # Forgot the Nostale path... If you have it, PM me xD
