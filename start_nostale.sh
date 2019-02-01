@@ -7,7 +7,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
         --privileged \
         --rm \
         --volume /tmp/.X11-unix/:/tmp/.X11-unix/ \
-        --volume $HOME/.wine/drive_c/Program Files (x86)/Nostale:/root/.wine/drive_c/Program Files (x86)/Nostale \
+        --volume "$HOME/.wine/drive_c/Program Files (x86)/Nostale":"/root/.wine/drive_c/Program Files (x86)/Nostale" \
         nostale
 else
     xhost +
