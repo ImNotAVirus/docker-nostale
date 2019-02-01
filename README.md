@@ -31,5 +31,8 @@
 ## Todolist:
 
 - [x] Basic features
+- [ ] Manage localhost
+- [ ] Manage multiclient
+- [ ] Manage configs
 - [ ] Clean this shit...
 - [ ] Too much things to do....
