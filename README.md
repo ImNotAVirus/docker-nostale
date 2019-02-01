@@ -12,17 +12,7 @@
 
 ## Step 2/4: Run image
 
-    # Ye, I known `xhost +` is a bad practice but ¯\_(ツ)_/¯
-    xhost +
-    docker run \
-        -ti \
-        --env DISPLAY=$DISPLAY \
-        --network=host \
-        --name nostale \
-        --privileged \
-        --volume /tmp/.X11-unix/:/tmp/.X11-unix/ \
-        nostale
-    xhost -
+    ./start_nostale.sh
 
 ## Step 3/4: Install nostale
 
