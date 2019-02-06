@@ -12,7 +12,7 @@
 
 ## Step 2/4: Run image
 
-    ./start_nostale.sh
+    ./run_nostale.sh
 
 ## Step 3/4: Install nostale
 
